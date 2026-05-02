@@ -169,21 +169,24 @@ export function TaskBoard() {
       <section className="grid gap-4 md:grid-cols-3">
         <StatCard
           icon={ListTodo}
-          label="Total Tasks"
+          title="Total Tasks"
           value={stats.total}
-          detail="All items in your local planner"
+          helper="All items in your local planner"
+          tone="violet"
         />
         <StatCard
           icon={CheckCircle2}
-          label="Completed Today"
+          title="Completed Today"
           value={stats.completedToday}
-          detail="Finished since local midnight"
+          helper="Finished since local midnight"
+          tone="emerald"
         />
         <StatCard
           icon={CircleDotDashed}
-          label="In Progress"
+          title="In Progress"
           value={stats.inProgress}
-          detail="Active tasks still moving"
+          helper="Active tasks still moving"
+          tone="sky"
         />
       </section>
 

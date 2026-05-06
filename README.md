@@ -14,20 +14,20 @@ The app stores todos in a local JSON file and lets you:
 
 ## Usage
 
-Run the CLI with Python:
+Run the CLI with Python 3:
 
 ```bash
-python todo.py add "Write tests"
-python todo.py list
-python todo.py done 1
-python todo.py list --all
-python todo.py delete 1
+python3 todo.py add "Write tests"
+python3 todo.py list
+python3 todo.py done 1
+python3 todo.py list --all
+python3 todo.py delete 1
 ```
 
 By default, todos are saved to `~/.todo_cli.json`. To use a different file:
 
 ```bash
-python todo.py --file ./todos.json add "Try the CLI"
+python3 todo.py --file ./todos.json add "Try the CLI"
 ```
 
 ## Commands
@@ -48,5 +48,5 @@ clear --all       Delete every todo
 Run the test suite with:
 
 ```bash
-python -m unittest discover -s tests
+python3 -m unittest discover -s tests
 ```

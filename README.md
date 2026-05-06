@@ -1,6 +1,7 @@
 # Firstproject
 
-A small dependency-free Python command-line todo app.
+A small dependency-free Python project with a command-line todo app and a
+Tkinter Virtual Earth Clock.
 
 ## What it does
 
@@ -50,3 +51,16 @@ Run the test suite with:
 ```bash
 python3 -m unittest discover -s tests
 ```
+
+## Virtual Earth Clock
+
+Run the Houston-focused Earth Clock GUI with:
+
+```bash
+python3 earth_clock.py
+```
+
+The clock shows UTC, Houston local time, and an approximate Houston local solar
+time. It uses Python's standard-library `zoneinfo` support when available and
+falls back to a built-in Central Time offset calculation if IANA timezone data is
+missing.

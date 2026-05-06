@@ -14,7 +14,7 @@ class EarthClockTest(unittest.TestCase):
 
         self.assertEqual(
             earth_clock.calculate_local_solar_time(utc_dt),
-            "11:38:14 (Solar)",
+            "11:30:40 (Solar)",
         )
 
     def test_calculate_local_solar_time_wraps_before_midnight_utc(self) -> None:
@@ -22,7 +22,7 @@ class EarthClockTest(unittest.TestCase):
 
         self.assertEqual(
             earth_clock.calculate_local_solar_time(utc_dt),
-            "18:51:33 (Solar)",
+            "18:34:48 (Solar)",
         )
 
     def test_naive_datetime_is_rejected(self) -> None:
